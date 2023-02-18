@@ -27,8 +27,8 @@ document.getElementById('triangle-calculate').addEventListener('click',function(
     tr.innerHTML =     `
     <td>${serial}</td>
     <td>${triangleName}</td>
-    <td>${triangleArea}<small>cm</small>2</td>
-    <td><button class="btn-table" >Covert to m2</button></td>
+    <td>${triangleArea}cm<sup>2</sup></td>
+    <td><button class="btn-table" >Covert to m<sup>2</sup></button></td>
     `;
 tableContainer.appendChild(tr);
 
@@ -41,15 +41,15 @@ document.getElementById('rectrangle-calculate').addEventListener('click',functio
     serial += 1;
                     // getting Input values of rectrangle
     const rectrangleWString = document.getElementById('rectrangle-w').value;
-    const rectrangleIString = document.getElementById('rectrangle-i').value;
+    const rectrangleLString = document.getElementById('rectrangle-l').value;
 
                     // converting to numbers
     const rectrangleW = parseFloat(rectrangleWString);
-    const rectrangleI = parseFloat(rectrangleIString);
-    console.log(rectrangleI,rectrangleW)
+    const rectrangleL = parseFloat(rectrangleLString);
+    
 
                     //rectrangle area using the formula
-    const rectrangleArea = rectrangleW * rectrangleI;
+    const rectrangleArea = rectrangleW * rectrangleL;
     console.log(rectrangleArea)
                     //getting rectrangle innertext using id
     const rectrangleName = document.getElementById('rectrangle').innerText
@@ -62,8 +62,8 @@ document.getElementById('rectrangle-calculate').addEventListener('click',functio
     `
     <td>${serial}</td>
     <td>${rectrangleName}</td>
-    <td>${rectrangleArea}<small>cm</small>2</td>
-    <td><button class="btn-table" >Covert to m2</button></td>
+    <td>${rectrangleArea}cm<sup>2</sup></td>
+    <td><button class="btn-table" >Covert to m<sup>2</sup></button></td>
     `;
 tableContainer.appendChild(tr);
 
@@ -101,8 +101,8 @@ document.getElementById('parallelogram-calculate').addEventListener('click',func
                 `
                 <td>${serial}</td>
                 <td>${parallelogramName}</td>
-                <td>${parallelogramArea}<small>cm</small>2</td>
-                <td><button class="btn-table" >Covert to m2</button></td>
+                <td>${parallelogramArea}cm<sup>2</sup></td>
+                <td><button class="btn-table" >Covert to m<sup>2</sup></button></td>
                 `;
             tableContainer.appendChild(tr);
                 
@@ -134,8 +134,8 @@ document.getElementById('rhombus-calculate').addEventListener('click',function()
     `
     <td>${serial}</td>
     <td>${rhombusName}</td>
-    <td>${rhombusArea}<small>cm</small>2</td>
-    <td><button class="btn-table" >Covert to m2</button></td>
+    <td>${rhombusArea}cm<sup>2</sup></td>
+    <td><button class="btn-table" >Covert to m<sup>2</sup></button></td>
     `;
 tableContainer.appendChild(tr);
 
@@ -169,8 +169,8 @@ document.getElementById('pentagon-calculate').addEventListener('click',function(
     `
     <td>${serial}</td>
     <td>${pentagonName}</td>
-    <td>${pentagonArea}<small>cm</small>2</td>
-    <td><button class="btn-table" >Covert to m2</button></td>
+    <td>${pentagonArea}cm<sup>2</sup></td>
+    <td><button class="btn-table" >Covert to m<sup>2</sup></button></td>
     `;
 tableContainer.appendChild(tr);
 
@@ -204,11 +204,31 @@ document.getElementById('ellipse-calculate').addEventListener('click',function()
     `
     <td>${serial}</td>
     <td>${ellipseName}</td>
-    <td>${ellipseArea}<small>cm</small>2</td>
-    <td><button class="btn-table" >Covert to m2</button></td>
+    <td>${ellipseArea}cm<sup>2</sup></td>
+    <td><button class="btn-table" >Covert to m<sup>2</sup></button></td>
     `;
 tableContainer.appendChild(tr);
 
 
     
 })
+
+
+
+// random color
+
+// function randomColor() {
+//     let color = [];
+//     for (let i = 0; i < 3; i++) {
+//       color.push(Math.floor(Math.random() * 256));
+//     }
+//     return 'rgb(' + color.join(', ') + ')';
+//   } 
+  
+//   document.addEventListener("mouseover", function(){
+//     document.body.style.backgroundColor = randomColor();
+//   });
+  
+//   document.querySelector('card-made').addEventListener('mouseover', event => {
+//         event.target.style.fill = randomColor();
+//   });
