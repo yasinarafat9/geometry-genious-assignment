@@ -107,3 +107,38 @@ document.getElementById('parallelogram-calculate').addEventListener('click',func
             tableContainer.appendChild(tr);
                 
 })
+// ------------------------- Rhombus -----------------------------------
+document.getElementById('rhombus-calculate').addEventListener('click',function(){
+    
+    serial += 1;
+                    // getting Input values 
+    const rhombusD1String = document.getElementById('rhombus-d1').value;
+    const rhombusD2String = document.getElementById('rhombus-d2').value;
+
+                    // converting to numbers
+    const rhombusD1 = parseFloat(rhombusD1String);
+    const rhombusD2 = parseFloat(rhombusD2String);
+    
+
+                    // area using the formula
+    const rhombusArea = 0.5 * (rhombusD1 * rhombusD2);
+    
+                    //getting  innertext using id
+    const rhombusName = document.getElementById('rhombus').innerText
+    
+                    // getting table container for creating new elements
+    const tableContainer = document.getElementById('table-container');
+                    // Writing innerHTML for 
+    const tr = document.createElement('tr');
+    tr.innerHTML = 
+    `
+    <td>${serial}</td>
+    <td>${rhombusName}</td>
+    <td>${rhombusArea}<small>cm</small>2</td>
+    <td><button class="btn-table" >Covert to m2</button></td>
+    `;
+tableContainer.appendChild(tr);
+
+
+    
+})
