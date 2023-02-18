@@ -61,3 +61,4 @@ tableContainer.appendChild(tr);
 
     
 })
+console.log('triangle')
