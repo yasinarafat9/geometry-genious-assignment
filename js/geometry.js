@@ -9,17 +9,20 @@ document.getElementById('triangle-calculate').addEventListener('click',function(
     const  triangleBString = document.getElementById('triangle-b').value;   
     const  triangleHString = document.getElementById('triangle-h').value;
 
+        
+
                 // converting to numbers
     const triangleB = parseFloat(triangleBString);
     const triangleH = parseFloat(triangleHString);
-    console.log(triangleB + triangleH)
 
+
+    
                 // Trangle area using the formula
     const triangleArea = 0.5 * (triangleB * triangleH);
-    console.log(triangleArea)
+    
                 //getting Triangle innertext using id
     const triangleName = document.getElementById('triangle').innerText
-    console.log(triangleName)
+    
                 // getting table container for creating new elements
     const tableContainer = document.getElementById('table-container');
                 // Writing innerHTML for triangle
@@ -47,13 +50,12 @@ document.getElementById('rectrangle-calculate').addEventListener('click',functio
     const rectrangleW = parseFloat(rectrangleWString);
     const rectrangleL = parseFloat(rectrangleLString);
     
-
                     //rectrangle area using the formula
     const rectrangleArea = rectrangleW * rectrangleL;
-    console.log(rectrangleArea)
+    
                     //getting rectrangle innertext using id
     const rectrangleName = document.getElementById('rectrangle').innerText
-    console.log(rectrangleName)
+    
                     // getting table container for creating new elements
     const tableContainer = document.getElementById('table-container');
                     // Writing innerHTML for triangle
@@ -67,8 +69,7 @@ document.getElementById('rectrangle-calculate').addEventListener('click',functio
     `;
 tableContainer.appendChild(tr);
 
-
-    
+   
 })
 // ------------------------- Parallelogram ----------------------------
 document.getElementById('parallelogram-calculate').addEventListener('click',function(){
@@ -84,15 +85,13 @@ document.getElementById('parallelogram-calculate').addEventListener('click',func
                                     // converting to numbers
                     const parallelogramB = parseFloat(parallelogramBString);
                     const parallelogramH = parseFloat(parallelogramBString);
-                    console.log(parallelogramB)
-                
+                                  
                                     //getting area using the formula
                     const parallelogramArea = parallelogramB * parallelogramH ;
-                    console.log(parallelogramArea)
-
+                    
                 //getting  innertext using id
                 const parallelogramName = document.getElementById('Parallelogram').innerText
-                console.log(parallelogramName)
+                
                                 // getting table container for creating new elements
                 const tableContainer = document.getElementById('table-container');
                                 // Writing innerHTML for table
@@ -189,7 +188,6 @@ document.getElementById('ellipse-calculate').addEventListener('click',function()
     const ellipseA = parseFloat(ellipseAString);
     const ellipseB = parseFloat(ellipseBString);
     
-
                     // area using the formula
     const ellipseArea = 3.14 * (ellipseA * ellipseB);
     
