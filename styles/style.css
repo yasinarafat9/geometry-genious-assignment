@@ -13,3 +13,55 @@ body{
 .btn-primary:hover{
     background-color: rgb(9, 107, 107);
 }
+.btn-calculate{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #1090D8;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 50px;
+}
+.btn-calculate:hover{
+    background-color: rgb(9, 107, 107);
+}
+
+::placeholder{
+    text-align: center;
+}
+h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+p{
+    padding: 5px;
+    margin: 5px;
+}
+.card-areas{
+    height: 350px;
+    width: 290px;
+}
+
+.card-made{
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10px;
+}
+.card-made img{
+    height: 150px;
+    
+    margin: 0px auto;
+}
+.btn-table{
+    color: white;
+    
+    font-weight: bold;
+    background-color: #1090D8;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 30px;
+}
+.btn-table:hover{
+    background-color: rgb(9, 107, 107);
+}
