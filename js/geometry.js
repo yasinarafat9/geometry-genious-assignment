@@ -142,3 +142,38 @@ tableContainer.appendChild(tr);
 
     
 })
+// ------------------------- pentagon -----------------------------------
+document.getElementById('pentagon-calculate').addEventListener('click',function(){
+    
+    serial += 1;
+                    // getting Input values 
+    const pentagonPString = document.getElementById('pentagon-p').value;
+    const pentagonBString = document.getElementById('pentagon-b').value;
+
+                    // converting to numbers
+    const pentagonP = parseFloat(pentagonPString);
+    const pentagonB = parseFloat(pentagonBString);
+    
+
+                    // area using the formula
+    const pentagonArea = 0.5 * (pentagonP * pentagonB);
+    
+                    //getting  innertext using id
+    const pentagonName = document.getElementById('pentagon').innerText
+    
+                    // getting table container for creating new elements
+    const tableContainer = document.getElementById('table-container');
+                    // Writing innerHTML for 
+    const tr = document.createElement('tr');
+    tr.innerHTML = 
+    `
+    <td>${serial}</td>
+    <td>${pentagonName}</td>
+    <td>${pentagonArea}<small>cm</small>2</td>
+    <td><button class="btn-table" >Covert to m2</button></td>
+    `;
+tableContainer.appendChild(tr);
+
+
+    
+})
