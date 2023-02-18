@@ -62,3 +62,4 @@ tableContainer.appendChild(tr);
     
 })
 console.log('triangle')
+console.log('rectrangle')
