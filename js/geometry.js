@@ -177,3 +177,38 @@ tableContainer.appendChild(tr);
 
     
 })
+// ------------------------- Ellipse -----------------------------------
+document.getElementById('ellipse-calculate').addEventListener('click',function(){
+    
+    serial += 1;
+                    // getting Input values 
+    const ellipseAString = document.getElementById('ellipse-a').value;
+    const ellipseBString = document.getElementById('ellipse-b').value;
+
+                    // converting to numbers
+    const ellipseA = parseFloat(ellipseAString);
+    const ellipseB = parseFloat(ellipseBString);
+    
+
+                    // area using the formula
+    const ellipseArea = 3.14 * (ellipseA * ellipseB);
+    
+                    //getting  innertext using id
+    const ellipseName = document.getElementById('ellipse').innerText
+    
+                    // getting table container for creating new elements
+    const tableContainer = document.getElementById('table-container');
+                    // Writing innerHTML for 
+    const tr = document.createElement('tr');
+    tr.innerHTML = 
+    `
+    <td>${serial}</td>
+    <td>${ellipseName}</td>
+    <td>${ellipseArea}<small>cm</small>2</td>
+    <td><button class="btn-table" >Covert to m2</button></td>
+    `;
+tableContainer.appendChild(tr);
+
+
+    
+})
